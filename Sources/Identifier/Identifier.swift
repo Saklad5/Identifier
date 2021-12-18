@@ -11,4 +11,6 @@ extension Identifier {
   public static func ~= (pattern: RawValue, value: Self) -> Bool { pattern ~= value.rawValue }
 }
 
+#if swift(>=5.5) && canImport(_Concurrency)
 extension Identifier: Sendable where RawValue: Sendable {}
+#endif
