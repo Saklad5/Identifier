@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
@@ -8,9 +8,6 @@ let package = Package(
             name: "Identifier",
             targets: ["Identifier"]
         ),
-    ],
-    dependencies: [
-      .package(url: "git@github.com:apple/swift-docc-plugin", from: Version(1, 0, 0)),
     ],
     targets: [
         .target(
